@@ -246,6 +246,6 @@ I used a shared file (not a memory set in each worker) because the duplicate mes
 
 ---
 
-## Reflection
+## Why can a message be delivered more than once, and how does idempotent handling help?
 
-A message can be delivered more than once because RabbitMQ promises "at least once" delivery, not "exactly once". If a worker crashes or loses connection before it sends ACK, RabbitMQ does not know if the work was finished, so it sends the message to another worker. I saw this in my failure test. A producer can also send the same event twice when it retries. Idempotent handling helps because the worker remembers each `event_id`, so if the same message comes again, it skips the business action. This makes redelivery safe, because the order is never processed two times.
+A message can be delivered more than one time because RabbitMQ gives “at least once” delivery. In my failure test, worker-1 received ORD-1 and stopped before sending ACK, so RabbitMQ thought the work was not finished and gave the same message to worker-2. The producer can also send the same event again if it retries. To solve this, my worker saves every event_id and checks it before doing any work. When the same event_id came again, it only logged “DUPLICATE detected” and skipped the order, so the work was done only one time.
