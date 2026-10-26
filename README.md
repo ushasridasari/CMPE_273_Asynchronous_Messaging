@@ -8,25 +8,9 @@ I tested four things:
 3. If a worker crashes before ACK, another worker gets the message again.
 4. If the same event comes two times, it is processed only one time.
 
----
+##Architecture
 
-## How it works (architecture)
-
-```
-                         +----------------------+
-                    +--> |  worker-1 (process)  |
-                    |    +----------------------+
-+------------+   +-------+
-|  producer  |-->| orders|
-|  (process) |   | queue |
-+------------+   +-------+
-                    |    +----------------------+
-                    +--> |  worker-2 (process)  |
-                         +----------------------+
-
-   Both workers write finished event_ids to one shared file:
-   processed_events.txt   (used to find duplicates)
-```
+![Architecture diagram](screenshots/architecture.png)
 
 - The producer puts messages in the `orders` queue inside RabbitMQ.
 - RabbitMQ gives each message to **only one** worker.
