@@ -1,0 +1,3 @@
+[producer] published {'event_id': 'a8bc6163-bb68-4d9a-bf7a-ead3604a06b3', 'order_id': 'ORD-1', 'item_id': 'ITEM-101', 'quantity': 1}
+[producer] published {'event_id': 'bc711a2c-0f64-47e0-a375-ad8ba6c4a0ac', 'order_id': 'ORD-2', 'item_id': 'ITEM-102', 'quantity': 2}
+[producer] published {'event_id': '1382610e-dc99-42a8-9672-d481838595fd', 'order_id': 'ORD-3', 'item_id': 'ITEM-103', 'quantity': 3}

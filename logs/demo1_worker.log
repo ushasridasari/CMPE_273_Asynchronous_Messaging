@@ -1,0 +1,4 @@
+[12:05:24] [worker-1] waiting for messages. Ctrl+C to exit.
+[12:05:49] [worker-1] received order ORD-1 event_id=d645c0d1-63a7-48e1-baa4-50719c304be0
+[12:05:49] [worker-1] processing order ORD-1: 1 x ITEM-101
+[12:05:51] [worker-1] ACK sent for order ORD-1

@@ -1,0 +1,12 @@
+[12:23:47] [worker-1] waiting for messages. Ctrl+C to exit.
+[12:24:12] [worker-1] received order ORD-1 event_id=ade95152-e842-415f-b663-10827897f6e5
+[12:24:12] [worker-1] processing order ORD-1: 1 x ITEM-101
+[12:24:14] [worker-1] ACK sent for order ORD-1
+[12:24:14] [worker-1] received order ORD-2 event_id=a5f67e7d-5945-4a6a-88bb-2898e1e01a97
+[12:24:14] [worker-1] processing order ORD-2: 2 x ITEM-102
+[12:24:16] [worker-1] ACK sent for order ORD-2
+[12:24:16] [worker-1] received order ORD-3 event_id=5960b6f6-7606-4393-84fd-8e0f4cb33a93
+[12:24:16] [worker-1] processing order ORD-3: 3 x ITEM-103
+[12:24:18] [worker-1] ACK sent for order ORD-3
+[12:24:18] [worker-1] received order ORD-2 event_id=a5f67e7d-5945-4a6a-88bb-2898e1e01a97
+[12:24:18] [worker-1] DUPLICATE detected for event_id=a5f67e7d-5945-4a6a-88bb-2898e1e01a97 (order ORD-2) - skipping business action

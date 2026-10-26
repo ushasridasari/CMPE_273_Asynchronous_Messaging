@@ -1,0 +1,3 @@
+[12:18:03] [worker-1] waiting for messages. Ctrl+C to exit.
+[12:18:33] [worker-1] received order ORD-1 event_id=a8bc6163-bb68-4d9a-bf7a-ead3604a06b3
+[12:18:33] [worker-1] !!! simulating crash on ORD-1 before ACK

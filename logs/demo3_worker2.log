@@ -1,0 +1,10 @@
+[12:18:16] [worker-2] waiting for messages. Ctrl+C to exit.
+[12:18:33] [worker-2] received order ORD-2 event_id=bc711a2c-0f64-47e0-a375-ad8ba6c4a0ac
+[12:18:33] [worker-2] processing order ORD-2: 2 x ITEM-102
+[12:18:35] [worker-2] ACK sent for order ORD-2
+[12:18:35] [worker-2] received order ORD-1 event_id=a8bc6163-bb68-4d9a-bf7a-ead3604a06b3 (REDELIVERED)
+[12:18:35] [worker-2] processing order ORD-1: 1 x ITEM-101
+[12:18:37] [worker-2] ACK sent for order ORD-1
+[12:18:37] [worker-2] received order ORD-3 event_id=1382610e-dc99-42a8-9672-d481838595fd
+[12:18:37] [worker-2] processing order ORD-3: 3 x ITEM-103
+[12:18:39] [worker-2] ACK sent for order ORD-3
