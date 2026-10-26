@@ -2,3 +2,4 @@ __pycache__/
 .venv/
 processed_events.txt
 processed_events.lock
+.DS_Store
